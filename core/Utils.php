@@ -8,7 +8,7 @@ class Utils
 
     private static function logFile($pid){
         $logDir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'log' . DIRECTORY_SEPARATOR; //日志文件位置
-        if(is_dir($logDir)){
+        if(!is_dir($logDir)){
             mkdir($logDir, 664);
         }
         $fileName = $logDir . $pid . self::$EXT;
