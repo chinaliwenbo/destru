@@ -29,6 +29,7 @@ class Utils
      * @param type $pid
      */
     public static function deletePidLog($pid){
-        unset(self::logFile($pid));
+        $log = self::logFile($pid);
+        unset($log);
     }
 }
