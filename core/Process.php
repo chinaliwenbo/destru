@@ -182,7 +182,7 @@ class Process
     public function start()
     {
         if (!empty($this->pid) && $this->isRunning()) {
-            throw new \LogicException("the process is already running");
+            return ;
         }
 
         $callback = $this->getCallable();

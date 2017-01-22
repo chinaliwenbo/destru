@@ -20,7 +20,7 @@ class Worker implements \Core\Runnable {
     public function run()
     {
         while(true){
-            \Core\Utils::wirteLog(getmypid(), "sub process" . PHP_EOL);
+            echo getmypid(). "sub process" .PHP_EOL;
             sleep(3);
         }
     }
