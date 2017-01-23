@@ -33,4 +33,14 @@ while(true){
     $pool->keep(); 
 }
 
+/**
+ * 父进程在消息队列中插入数据
+ */
+function masterRun(){
+    
+}
 
+
+function workerRun(){
+    
+}
